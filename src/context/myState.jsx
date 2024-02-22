@@ -71,7 +71,7 @@ function MyState({ children }) {
 
 
     // Delete oder Function
-    const deleteProduct = async (id) => {
+    const orderDelete = async (id) => {
         setLoading(true)
         try {
             await deleteDoc(doc(fireDB, 'order', id))
@@ -127,7 +127,7 @@ function MyState({ children }) {
             getAllProduct,
             getAllProductFunction,
             getAllOrder,
-            deleteProduct,
+            orderDelete,
             getAllUser
         }}>
             {children}
