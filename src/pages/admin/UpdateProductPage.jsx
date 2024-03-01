@@ -72,6 +72,7 @@ const UpdateProductPage = () => {
                 productImageUrl: product?.productImageUrl,
                 category: product?.category,
                 description: product?.description,
+                quantity : product?.quantity,
                 time: product?.time,
                 date: product?.date
             })
